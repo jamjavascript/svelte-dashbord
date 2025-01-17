@@ -16,9 +16,9 @@
   ];
 
   const dataByCategory = Object.entries(
-    data.reduce((acc, d) => {
-      if (!acc[d.category]) acc[d.category] = [];
-      acc[d.category].push(d);
+    data.reduce((acc, { category, ...rest }) => {
+      acc[category] = acc[category] || [];
+      acc[category].push(rest);
       return acc;
     }, {})
   );
@@ -29,7 +29,7 @@
   };
 </script>
 
-<div class="h-[300px] px-5 pt-4">
+<div class="h-[301px] px-5 pt-4">
   <Chart
     {data}
     x="date"
@@ -54,10 +54,9 @@
       />
       <Axis placement="bottom" format={(d) => formatDate(d, "MMM dd")} rule />
       {#each dataByCategory as [category, data]}
-        {@const color = cScale?.(category)}
         <Spline
           {data}
-          stroke={color}
+          stroke={cScale?.(category)}
           class="stroke-[2]"
           style="stroke-dasharray: {category === 'Previous Period'
             ? '4,4'
@@ -80,12 +79,18 @@
 </div>
 
 <div class="flex items-center space-x-3 pt-3">
-  <div class="flex items-center space-x-1">
-    <div class="w-5 h-[2px] bg-[#3F83F8]"></div>
-    <span class="text-gray-500 font-medium text-xs">Total Revenue</span>
-  </div>
-  <div class="flex items-center space-x-1">
-    <div class="w-5 border-t-2 border-dashed border-[#3F83F8]"></div>
-    <span class="text-gray-500 font-medium text-xs">Previous Period</span>
-  </div>
+  {#each Object.entries(categoryColors) as [category, color]}
+    <div class="flex items-center space-x-1">
+      <div
+        class={`w-5 h-[2px] ${
+          category === "Previous Period" ? "border-t-2 border-dashed" : "bg"
+        }`}
+        style="border-color: {color}; background-color: {category !==
+        'Previous Period'
+          ? color
+          : 'transparent'}"
+      ></div>
+      <span class="text-gray-500 font-medium text-xs">{category}</span>
+    </div>
+  {/each}
 </div>
