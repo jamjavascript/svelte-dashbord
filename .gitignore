@@ -1,0 +1,27 @@
+node_modules
+
+# Output the build result for the specified module and its dependencies and dependencies
+.output
+/.svelte-kit
+.vercel
+/build
+yarn.lock
+.svelte-kit/
+yarn.lock/
+
+
+# OS Version
+.DS_Store
+Thumbs.db
+
+# Env variables
+.env
+.env.*
+!.env.test
+!.env.example
+
+# Vite & Storybook
+vite.config.ts.timestamp-*
+vite.config.js.timestamp-*
+
+*storybook.log

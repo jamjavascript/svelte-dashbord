@@ -1,0 +1,452 @@
+[
+  {
+    "date": "2024-12-18T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 52
+  },
+  {
+    "date": "2024-12-18T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 18
+  },
+  {
+    "date": "2024-12-18T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 75
+  },
+  {
+    "date": "2024-12-19T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 90
+  },
+  {
+    "date": "2024-12-19T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 100
+  },
+  {
+    "date": "2024-12-19T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 10
+  },
+  {
+    "date": "2024-12-20T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 30
+  },
+  {
+    "date": "2024-12-20T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 91
+  },
+  {
+    "date": "2024-12-20T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 72
+  },
+  {
+    "date": "2024-12-21T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 43
+  },
+  {
+    "date": "2024-12-21T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 23
+  },
+  {
+    "date": "2024-12-21T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 31
+  },
+  {
+    "date": "2024-12-22T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 19
+  },
+  {
+    "date": "2024-12-22T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 98
+  },
+  {
+    "date": "2024-12-22T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 94
+  },
+  {
+    "date": "2024-12-23T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 43
+  },
+  {
+    "date": "2024-12-23T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 16
+  },
+  {
+    "date": "2024-12-23T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 47
+  },
+  {
+    "date": "2024-12-24T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 49
+  },
+  {
+    "date": "2024-12-24T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 61
+  },
+  {
+    "date": "2024-12-24T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 29
+  },
+  {
+    "date": "2024-12-25T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 75
+  },
+  {
+    "date": "2024-12-25T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 57
+  },
+  {
+    "date": "2024-12-25T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 57
+  },
+  {
+    "date": "2024-12-26T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 58
+  },
+  {
+    "date": "2024-12-26T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 83
+  },
+  {
+    "date": "2024-12-26T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 64
+  },
+  {
+    "date": "2024-12-27T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 91
+  },
+  {
+    "date": "2024-12-27T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 24
+  },
+  {
+    "date": "2024-12-27T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 61
+  },
+  {
+    "date": "2024-12-28T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 96
+  },
+  {
+    "date": "2024-12-28T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 95
+  },
+  {
+    "date": "2024-12-28T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 67
+  },
+  {
+    "date": "2024-12-29T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 53
+  },
+  {
+    "date": "2024-12-29T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 51
+  },
+  {
+    "date": "2024-12-29T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 11
+  },
+  {
+    "date": "2024-12-30T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 90
+  },
+  {
+    "date": "2024-12-30T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 76
+  },
+  {
+    "date": "2024-12-30T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 40
+  },
+  {
+    "date": "2024-12-31T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 12
+  },
+  {
+    "date": "2024-12-31T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 40
+  },
+  {
+    "date": "2024-12-31T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 42
+  },
+  {
+    "date": "2025-01-01T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 37
+  },
+  {
+    "date": "2025-01-01T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 100
+  },
+  {
+    "date": "2025-01-01T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 60
+  },
+  {
+    "date": "2025-01-02T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 21
+  },
+  {
+    "date": "2025-01-02T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 23
+  },
+  {
+    "date": "2025-01-02T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 32
+  },
+  {
+    "date": "2025-01-03T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 21
+  },
+  {
+    "date": "2025-01-03T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 31
+  },
+  {
+    "date": "2025-01-03T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 33
+  },
+  {
+    "date": "2025-01-04T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 26
+  },
+  {
+    "date": "2025-01-04T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 96
+  },
+  {
+    "date": "2025-01-04T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 75
+  },
+  {
+    "date": "2025-01-05T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 98
+  },
+  {
+    "date": "2025-01-05T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 20
+  },
+  {
+    "date": "2025-01-05T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 16
+  },
+  {
+    "date": "2025-01-06T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 61
+  },
+  {
+    "date": "2025-01-06T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 24
+  },
+  {
+    "date": "2025-01-06T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 62
+  },
+  {
+    "date": "2025-01-07T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 67
+  },
+  {
+    "date": "2025-01-07T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 16
+  },
+  {
+    "date": "2025-01-07T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 36
+  },
+  {
+    "date": "2025-01-08T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 74
+  },
+  {
+    "date": "2025-01-08T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 37
+  },
+  {
+    "date": "2025-01-08T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 73
+  },
+  {
+    "date": "2025-01-09T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 33
+  },
+  {
+    "date": "2025-01-09T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 50
+  },
+  {
+    "date": "2025-01-09T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 14
+  },
+  {
+    "date": "2025-01-10T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 95
+  },
+  {
+    "date": "2025-01-10T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 69
+  },
+  {
+    "date": "2025-01-10T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 91
+  },
+  {
+    "date": "2025-01-11T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 16
+  },
+  {
+    "date": "2025-01-11T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 72
+  },
+  {
+    "date": "2025-01-11T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 72
+  },
+  {
+    "date": "2025-01-12T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 59
+  },
+  {
+    "date": "2025-01-12T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 22
+  },
+  {
+    "date": "2025-01-12T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 11
+  },
+  {
+    "date": "2025-01-13T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 63
+  },
+  {
+    "date": "2025-01-13T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 82
+  },
+  {
+    "date": "2025-01-13T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 37
+  },
+  {
+    "date": "2025-01-14T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 46
+  },
+  {
+    "date": "2025-01-14T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 48
+  },
+  {
+    "date": "2025-01-14T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 62
+  },
+  {
+    "date": "2025-01-15T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 19
+  },
+  {
+    "date": "2025-01-15T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 74
+  },
+  {
+    "date": "2025-01-15T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 91
+  },
+  {
+    "date": "2025-01-16T19:00:00.000Z",
+    "fruit": "apples",
+    "value": 40
+  },
+  {
+    "date": "2025-01-16T19:00:00.000Z",
+    "fruit": "bananas",
+    "value": 38
+  },
+  {
+    "date": "2025-01-16T19:00:00.000Z",
+    "fruit": "oranges",
+    "value": 89
+  }
+]
