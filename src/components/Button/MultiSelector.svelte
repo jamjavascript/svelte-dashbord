@@ -1,10 +1,5 @@
 <script>
   let selected = "This month";
-  const periods = ["This week", "This month", "This year"];
-
-  function selectPeriod(period) {
-    selected = period;
-  }
 </script>
 
 <div

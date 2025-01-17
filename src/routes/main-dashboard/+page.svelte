@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import StatsCard from "@/components/Stats/StatsCard.svelte";
   import Card from "@/components/UpComingEventsCards/index.svelte";
-  import RevenueChart from "@/components/chart/RevenueChart.svelte";
+  import RevenueChart from "@/components/Chart/RevenueChart.svelte";
   import Table from "@/components/Table/Table.svelte";
   import {
     upComingEventsTableColumn,
@@ -12,25 +12,13 @@
   import EventsProgress from "@/components/Events/EventsProgress.svelte";
   import UpComingEventCard from "@/components/UpComingEventsCards/UpComingEventCard.svelte";
   import RecentOrderCard from "@/components/UpComingEventsCards/RecentOrderCard.svelte";
-  import MonthSelectorButton from "@/components/Button/MonthSelector.svelte";
+  import MultiSelectorButton from "@/components/Button/MultiSelector.svelte";
   import ExportButton from "@/components/Button/Export.svelte";
   import dollar from "@/assets/svg/dollar.svg";
   import ticket from "@/assets/svg/ticket.svg";
   import event from "@/assets/svg/ticket.svg";
 
   let notifications = [];
-
-  const labels = [
-    "01 Jan",
-    "05 Jan",
-    "10 Jan",
-    "15 Jan",
-    "20 Jan",
-    "25 Jan",
-    "31 Jan",
-  ];
-  const currentPeriodData = [5000, 10000, 8000, 25000, 3000, 12000, 5000];
-  const previousPeriodData = [4000, 3000, 3000, 10000, 4000, 5000, 7000];
 
   let statsData = [
     {
@@ -176,7 +164,7 @@
       </div>
       <div class="lg:hidden block">
         <div class="flex justify-end gap-2 pt-2 pb-1">
-          <MonthSelectorButton />
+          <MultiSelectorButton />
           <ExportButton />
         </div>
       </div>
@@ -237,7 +225,7 @@
             subtitle="Last 30 days"
             buttons={true}
           >
-            <RevenueChart {labels} {currentPeriodData} {previousPeriodData} />
+            <RevenueChart />
           </Card>
         </div>
         <div>
