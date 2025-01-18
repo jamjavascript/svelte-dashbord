@@ -1,9 +1,9 @@
 <script>
-  import Card from "../UpComingEventsCards/index.svelte";
+  import CardHeader from "../UpComingEventsCards/CardHeader.svelte";
   import NotificationGroup from "./NotificationGroup.svelte";
   export let notifications = [];
 </script>
 
-<Card title="Notifications" link="/">
+<CardHeader title="Notifications" link="/">
   <NotificationGroup {notifications} />
-</Card>
+</CardHeader>

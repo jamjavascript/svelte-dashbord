@@ -1,7 +1,7 @@
 <script>
   import { onMount } from "svelte";
   import StatsCard from "@/components/Stats/StatsCard.svelte";
-  import Card from "@/components/UpComingEventsCards/index.svelte";
+  import CardHeader from "@/components/UpComingEventsCards/CardHeader.svelte";
   import RevenueChart from "@/components/Chart/RevenueChart.svelte";
   import Table from "@/components/Table/Table.svelte";
   import {
@@ -177,7 +177,7 @@
           <StatsCard stats={statsData} />
         </div>
         <div>
-          <Card title="Upcoming events" linkText="See all" link="/">
+          <CardHeader title="Upcoming events" linkText="See all" link="/">
             {#if isUpComingEventsloading}
               <div class="flex justify-center items-center h-screen">
                 <div class="loader">
@@ -216,20 +216,20 @@
                 <UpComingEventCard events={upComingEventsTableData} />
               </div>
             {/if}
-          </Card>
+          </CardHeader>
         </div>
         <div>
-          <Card
+          <CardHeader
             title="Revenue"
             linkText="See all"
             subtitle="Last 30 days"
             buttons={true}
           >
             <RevenueChart />
-          </Card>
+          </CardHeader>
         </div>
         <div>
-          <Card title="Recent Orders" linkText="See all" link="/">
+          <CardHeader title="Recent Orders" linkText="See all" link="/">
             {#if loadingRecentOrder}
               <div class="flex justify-center items-center h-screen">
                 <div class="loader">
@@ -267,7 +267,7 @@
                 <RecentOrderCard data={filteredRecentOrderEvents} />
               </div>
             {/if}
-          </Card>
+          </CardHeader>
         </div>
       </div>
       <div class="flex flex-col gap-4 lg:col-span-4">
@@ -286,17 +286,21 @@
           </div>
         {/if}
         <div>
-          <Card title="Top Events" buttons={true} event={true}>
+          <CardHeader title="Top Events" buttons={true} event={true}>
             <EventsProgress events={topEvents} variant="top" />
-          </Card>
+          </CardHeader>
         </div>
         <div>
-          <Card title="Underperforming Events" buttons={true} event={true}>
+          <CardHeader
+            title="Underperforming Events"
+            buttons={true}
+            event={true}
+          >
             <EventsProgress
               events={underperformingEvents}
               variant="underperforming"
             />
-          </Card>
+          </CardHeader>
         </div>
       </div>
     </div>

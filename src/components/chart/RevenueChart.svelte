@@ -4,39 +4,25 @@
   import { Chart, Svg, Axis, Spline, Highlight, Tooltip } from "layerchart";
 
   const data = [
-    { date: new Date(2025, 0, 1), value: 5000, category: "Total Revenue" },
-    { date: new Date(2025, 0, 3), value: 10500, category: "Total Revenue" },
+    { date: new Date(2025, 0, 1), value: 10000, category: "Total Revenue" },
     { date: new Date(2025, 0, 5), value: 8000, category: "Total Revenue" },
-    { date: new Date(2025, 0, 7), value: 7000, category: "Total Revenue" },
-    { date: new Date(2025, 0, 9), value: 25000, category: "Total Revenue" },
-    { date: new Date(2025, 0, 11), value: 3000, category: "Total Revenue" },
-    { date: new Date(2025, 0, 13), value: 2500, category: "Total Revenue" },
-    { date: new Date(2025, 0, 15), value: 12000, category: "Total Revenue" },
-    { date: new Date(2025, 0, 17), value: 4000, category: "Total Revenue" },
-    { date: new Date(2025, 0, 19), value: 3500, category: "Total Revenue" },
-    { date: new Date(2025, 0, 21), value: 4000, category: "Total Revenue" },
-    { date: new Date(2025, 0, 23), value: 15000, category: "Total Revenue" },
-    { date: new Date(2025, 0, 25), value: 12000, category: "Total Revenue" },
-    { date: new Date(2025, 0, 27), value: 10000, category: "Total Revenue" },
-    { date: new Date(2025, 0, 29), value: 18000, category: "Total Revenue" },
-    { date: new Date(2025, 0, 31), value: 7000, category: "Total Revenue" },
+    { date: new Date(2025, 0, 9), value: 50000, category: "Total Revenue" },
+    { date: new Date(2025, 0, 13), value: 0, category: "Total Revenue" },
+    { date: new Date(2025, 0, 17), value: 30500, category: "Total Revenue" },
+    { date: new Date(2025, 0, 21), value: 14000, category: "Total Revenue" },
+    { date: new Date(2025, 0, 25), value: 75000, category: "Total Revenue" },
+    { date: new Date(2025, 0, 29), value: 1000, category: "Total Revenue" },
+    { date: new Date(2025, 0, 31), value: 80000, category: "Total Revenue" },
 
-    { date: new Date(2025, 0, 1), value: 4000, category: "Previous Period" },
-    { date: new Date(2025, 0, 3), value: 3500, category: "Previous Period" },
-    { date: new Date(2025, 0, 5), value: 3000, category: "Previous Period" },
-    { date: new Date(2025, 0, 7), value: 2500, category: "Previous Period" },
-    { date: new Date(2025, 0, 9), value: 3000, category: "Previous Period" },
-    { date: new Date(2025, 0, 11), value: 11000, category: "Previous Period" },
-    { date: new Date(2025, 0, 13), value: 4000, category: "Previous Period" },
-    { date: new Date(2025, 0, 15), value: 4000, category: "Previous Period" },
-    { date: new Date(2025, 0, 17), value: 4000, category: "Previous Period" },
-    { date: new Date(2025, 0, 19), value: 4500, category: "Previous Period" },
-    { date: new Date(2025, 0, 21), value: 11000, category: "Previous Period" },
-    { date: new Date(2025, 0, 23), value: 15000, category: "Previous Period" },
-    { date: new Date(2025, 0, 25), value: 4000, category: "Previous Period" },
-    { date: new Date(2025, 0, 27), value: 3500, category: "Previous Period" },
-    { date: new Date(2025, 0, 29), value: 2000, category: "Previous Period" },
-    { date: new Date(2025, 0, 31), value: 7000, category: "Previous Period" },
+    { date: new Date(2025, 0, 1), value: 0, category: "Previous Period" },
+    { date: new Date(2025, 0, 5), value: 69000, category: "Previous Period" },
+    { date: new Date(2025, 0, 9), value: 45000, category: "Previous Period" },
+    { date: new Date(2025, 0, 13), value: 65000, category: "Previous Period" },
+    { date: new Date(2025, 0, 17), value: 50000, category: "Previous Period" },
+    { date: new Date(2025, 0, 21), value: 15000, category: "Previous Period" },
+    { date: new Date(2025, 0, 25), value: 2000, category: "Previous Period" },
+    { date: new Date(2025, 0, 29), value: 30000, category: "Previous Period" },
+    { date: new Date(2025, 0, 31), value: 10000, category: "Previous Period" },
   ];
 
   const dataByCategory = Object.entries(
@@ -73,11 +59,25 @@
       <Svg>
         <Axis
           placement="left"
-          grid
           rule
+          grid={{ stroke: "#E5E7EB", strokeWidth: "0.5px" }}
+          ticks={[0, 25000, 50000, 75000, 100000]}
           format={(d) => `$${d.toLocaleString()}`}
         />
-        <Axis placement="bottom" format={(d) => formatDate(d, "dd MMM")} rule />
+        <Axis
+          placement="bottom"
+          format={(d) => formatDate(d, "dd MMM")}
+          rule
+          ticks={[
+            new Date(2025, 0, 1),
+            new Date(2025, 0, 5),
+            new Date(2025, 0, 10),
+            new Date(2025, 0, 15),
+            new Date(2025, 0, 20),
+            new Date(2025, 0, 25),
+            new Date(2025, 0, 31),
+          ]}
+        />
         {#each dataByCategory as [category, data]}
           <Spline
             {data}
