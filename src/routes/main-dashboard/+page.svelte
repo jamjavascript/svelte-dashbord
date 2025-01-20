@@ -2,7 +2,7 @@
   import { onMount } from "svelte";
   import StatsCard from "@/components/Stats/StatsCard.svelte";
   import CardHeader from "@/components/UpComingEventsCards/CardHeader.svelte";
-  import RevenueChart from "@/components/Chart/RevenueChart.svelte";
+  import RevenueChart from "./../../components/Chart/RevenueChart.svelte";
   import Table from "@/components/Table/Table.svelte";
   import {
     upComingEventsTableColumn,
