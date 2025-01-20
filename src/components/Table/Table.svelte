@@ -1,5 +1,4 @@
 <script lang="ts">
-  import { createTableStore } from "./../../stores/tableStore";
   import { onDestroy, onMount } from "svelte";
   import type { Writable } from "svelte/store";
   import { writable } from "svelte/store";
@@ -11,6 +10,7 @@
   import TablePagination from "./TablePagination.svelte";
   import TableRow from "./TableRow.svelte";
   import TableSearch from "./TableSearch.svelte";
+  import { createTableStore } from "../../stores/globalStore";
 
   let currentPage = 1;
   export let searchQuery: Writable<string> = writable("");
