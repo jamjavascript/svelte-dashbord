@@ -2,6 +2,13 @@
   import { scaleTime, scaleOrdinal } from "d3-scale";
   import { format as formatDate } from "date-fns";
   import { Chart, Svg, Axis, Spline, Highlight, Tooltip } from "layerchart";
+  import { resize } from "../../stores/windowSize";
+
+  let dimensions = { width: 0, height: 0 };
+
+  function handleResize(event) {
+    dimensions = event;
+  }
 
   const data = [
     { date: new Date(2025, 0, 1), value: 10000, category: "Total Revenue" },
@@ -39,7 +46,7 @@
   };
 </script>
 
-<div class="space-y-4">
+<div class="space-y-4" use:resize={handleResize}>
   <div class="h-[301px]">
     <Chart
       {data}
@@ -68,15 +75,21 @@
           placement="bottom"
           format={(d) => formatDate(d, "dd MMM")}
           rule
-          ticks={[
-            new Date(2025, 0, 1),
-            new Date(2025, 0, 5),
-            new Date(2025, 0, 10),
-            new Date(2025, 0, 15),
-            new Date(2025, 0, 20),
-            new Date(2025, 0, 25),
-            new Date(2025, 0, 31),
-          ]}
+          ticks={dimensions.width >= 768
+            ? [
+                new Date(2025, 0, 1),
+                new Date(2025, 0, 5),
+                new Date(2025, 0, 10),
+                new Date(2025, 0, 15),
+                new Date(2025, 0, 20),
+                new Date(2025, 0, 25),
+                new Date(2025, 0, 31),
+              ]
+            : [
+                new Date(2025, 0, 1),
+                new Date(2025, 0, 15),
+                new Date(2025, 0, 31),
+              ]}
         />
         {#each dataByCategory as [category, data]}
           <Spline
