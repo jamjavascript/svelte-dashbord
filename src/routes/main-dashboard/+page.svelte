@@ -1,19 +1,19 @@
 <script>
   import { onMount } from "svelte";
-  import StatsCard from "@/components/Stats/StatsCard.svelte";
-  import CardHeader from "@/components/UpComingEventsCards/CardHeader.svelte";
-  import RevenueChart from "./../../components/Chart/RevenueChart.svelte";
-  import Table from "@/components/Table/Table.svelte";
+  import StatsCard from "@components/Stats/StatsCard.svelte";
+  import CardHeader from "@components/UpComingEventsCards/CardHeader.svelte";
+  import RevenueChart from "@components/Chart/RevenueChart.svelte";
+  import Table from "@components/Table/Table.svelte";
   import {
     upComingEventsTableColumn,
     RecentOrderTableColumns,
   } from "./upComingEventsTableColumns";
-  import Notification from "@/components/Notification/Notification.svelte";
-  import EventsProgress from "@/components/Events/EventsProgress.svelte";
-  import UpComingEventCard from "@/components/UpComingEventsCards/UpComingEventCard.svelte";
-  import RecentOrderCard from "@/components/UpComingEventsCards/RecentOrderCard.svelte";
-  import MultiSelectorButton from "@/components/Button/MultiSelector.svelte";
-  import ExportButton from "@/components/Button/Export.svelte";
+  import Notification from "@components/Notification/Notification.svelte";
+  import EventsProgress from "@components/Events/EventsProgress.svelte";
+  import UpComingEventCard from "@components/UpComingEventsCards/UpComingEventCard.svelte";
+  import RecentOrderCard from "@components/UpComingEventsCards/RecentOrderCard.svelte";
+  import MultiSelectorButton from "@components/Button/MultiSelector.svelte";
+  import ExportButton from "@components/Button/Export.svelte";
   import dollar from "@/assets/svg/dollar.svg";
   import ticket from "@/assets/svg/ticket.svg";
   import event from "@/assets/svg/ticket.svg";
